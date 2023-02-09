@@ -91,7 +91,7 @@ sudo tee /etc/cron.d/wings-updater <<EOF
 EOF
 
     # Copy script to /usr/local/bin
-    curl -L -o wings-updater.sh https://raw.githubusercontent.com/Tiebienotjuh/scriptjes/main/wings-updater.sh
+    curl -L -o wings-updater.sh https://raw.githubusercontent.com/Tiebienotjuh/wings-updater/main/wings-updater.sh
     cp wings-updater.sh /usr/local/bin/wings-updater.sh
     sudo chmod +x /usr/local/bin/wings-updater.sh
     rm wings-updater.sh
