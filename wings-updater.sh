@@ -91,8 +91,10 @@ sudo tee /etc/cron.d/wings-updater <<EOF
 EOF
 
     # Copy script to /usr/local/bin
-    sudo cp wings-updater.sh /usr/local/bin/wings-updater.sh
+    curl -L -o wings-updater.sh https://raw.githubusercontent.com/Tiebienotjuh/scriptjes/main/wings-updater.sh
+    cp wings-updater.sh /usr/local/bin/wings-updater.sh
     sudo chmod +x /usr/local/bin/wings-updater.sh
+    rm wings-updater.sh
     echo "Done!"
     echo "You can now run the script with 'wings-updater.sh check' or 'wings-updater.sh update'"
     echo "The script will check every day for updates and update if there is a new version available"
