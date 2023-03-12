@@ -87,7 +87,7 @@ else
     
     # Create cronjob)
 sudo tee /etc/cron.d/wings-updater <<EOF
-0 0 * * * root /usr/local/bin/wings-updater.sh check
+0 0 * * * /usr/local/bin/wings-updater.sh check
 EOF
 
     # Copy script to /usr/local/bin
